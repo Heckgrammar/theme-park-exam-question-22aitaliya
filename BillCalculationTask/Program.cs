@@ -19,6 +19,17 @@
             // 2: 10 people
             // 3: 6 people
             // Commit your changes and add screnshot evidence of your program running to the Readme
+            for (int i = 0; i <= 3; i++)
+            {
+                Console.Write("How many people coming to the theme park?: ");
+                int TotalPeople = Convert.ToInt32(Console.ReadLine());
+                int totalCost = TotalPeople * 15;
+                if (TotalPeople >= 6)
+                {
+                    totalCost -= 5;
+                }
+                Console.WriteLine($"Total cost is {totalCost}.");
+            }
 
         }
     }
